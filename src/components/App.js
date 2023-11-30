@@ -14,7 +14,7 @@ const App = () => {
       })
   })
   if (isLoading) return <h1>Loading...</h1>
-  if(data.message) return <h1>An error occurred: </h1>
+  if(data.message) return <h1>An error occurred: {data.message}</h1>
   return (
     <div>
       <h1>Data Fetched from API</h1>

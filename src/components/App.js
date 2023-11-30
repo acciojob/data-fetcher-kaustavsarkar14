@@ -20,7 +20,7 @@ const App = () => {
       <h1>Data Fetched from API</h1>
       <pre>
         {/* Do not remove the main div */}
-        {JSON.stringify(data)}
+        {JSON.stringify(data,null,2)}
       </pre>
     </div>
   )

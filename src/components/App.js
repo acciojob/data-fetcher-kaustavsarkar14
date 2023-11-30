@@ -12,9 +12,9 @@ const App = () => {
         setData(data)
         setLoading(false)
       })
-      .catch(err=>setData('An error occurred: '))
   })
   if (isLoading) return <h1>Loading...</h1>
+  if(data.message) return <h1>An error occurred: </h1>
   return (
     <div>
       <h1>Data Fetched from API</h1>
